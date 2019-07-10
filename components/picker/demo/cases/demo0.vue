@@ -3,7 +3,6 @@
     <md-picker
       ref="picker"
       :data="pickerData"
-      :invalid-index="[[2, 3, 4]]"
       @initialed="onPickerInitialed"
       @change="onPickerConfirm"
       is-view
@@ -11,7 +10,8 @@
   </div>
 </template>
 
-<script>import {Picker, Dialog} from 'mand-mobile'
+<script>
+import {Picker, Dialog} from 'mand-mobile'
 import simple from 'mand-mobile/components/picker/demo/data/simple'
 
 export default {
@@ -79,4 +79,5 @@ export default {
     },
   },
 }
-</script>
+
+</script>
